@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    background-color: #737373;
+}
+#top-image {
+    width: 100%;
+    margin: 0;
+    display: inline;
+    
+}
+#grouping {
+    display: inline-flex;
+    max-width: 100%;
+    margin: 50px;
+}
+#center-div {
+    margin: 50px auto;
+    text-align: center;
+}
+.circle {
+    width: 250px;
+    border-radius: 50%;
+    border: 10px solid #444444;
+}    
+.center {
+    margin: 50px;
+    text-align: center;
+}
+

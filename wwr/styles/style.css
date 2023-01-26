@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@300&display=swap');
+body {
+    background-color: whitesmoke;
+    font-family: Roboto, 'Times New Roman', serif;
+    padding: 0;
+    margin: 0;
+}
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -6,15 +13,21 @@ nav a {
     text-align: center;
     color: #03045E;
     text-decoration: none;
+    padding: 35px;
 }
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
+    font-family: Raleway, Helvetica, sans-serif;
 }
 .button-box {
     text-align: center;
 }
 main section {
     text-align: center;
+   
+}
+main section img {
+    box-sizing: border-box;
 }
 #background {
     height: 725px;
@@ -31,21 +44,33 @@ nav a:hover {
     background-color: #0077B6;
     color: #FFFFFF;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .msg {
     background-color: #03045E;
     color: white;
+    line-height: 1.5em;
+    padding: 35px;
 }
 footer {
     background-color: #b6e6ee;
     color: #03045E;
-    font-size: 1.2em 
+    font-size: 1.2em;
+    padding: 25px 30px;
+    margin-top: 200px;
 }
 .home-title {
-    color: #03045E
+    color: #03045E;
+    font-family: Raleway, Helvetica, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 h4 {
-    color: #90E0EF
+    color: #90E0EF;
+    font-family: Raleway, Helvetica, sans-serif;
 }
 .book:hover, .join:hover {
     background-color: #90E0EF;
@@ -53,9 +78,16 @@ h4 {
 }
 .msg h2 {
     color: white;
+    font-family: Raleway, Helvetica, sans-serif;
+}
+h2 {
+    margin: 0;
 }
 .msg p {
     color: white;
+    font-family: Roboto, 'Times New Roman', serif;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 footer a {
     color: #03045E;
@@ -69,7 +101,28 @@ footer a:hover {
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 footer p a:hover {
     text-decoration: underline;
+}
+#logo_link {
+    padding-top: 5px;
+}
+footer .social img {
+    padding-top: 15px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid #03045E;
+}
+
+/* Eu adicionei essas configurações abaixo pra ficar igual a imagem da professora. */
+.mountains {
+    margin: 100px auto 200px 0;
+}
+#hero-img {
+    width: 100%;
 }
