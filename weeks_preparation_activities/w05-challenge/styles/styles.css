@@ -3,29 +3,28 @@
   }
 body {
     background-color: #737373;
+    margin: 0;
+    padding: 0;
 }
 #top-image {
     width: 100%;
-    margin: 0;
-    display: inline;
-    
+    margin: 0 auto;
+    text-align: center;
 }
 #grouping {
     display: inline-flex;
-    max-width: 100%;
-    margin: 50px;
-}
-#center-div {
-    margin: 50px auto;
-    text-align: center;
+    width: 100%;
+    padding: 80px;
 }
 .circle {
     width: 250px;
     border-radius: 50%;
     border: 10px solid #444444;
-}    
+}
+.space {
+    padding: 50px;
+}
 .center {
-    margin: 50px;
-    text-align: center;
+    margin: auto;
 }
 
