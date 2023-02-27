@@ -321,6 +321,14 @@ nav {
     .msg-faq h2 {
         font-size: 1em;
     }
+    .join-faq {
+        grid-column: 3/5;
+        grid-row: 9/10;
+        font-size: 15px;
+        padding: 10px 15;
+        margin-top: 80px;
+        border-radius: 5px;
+    }
     footer {
         margin-top: 25px;
     }
