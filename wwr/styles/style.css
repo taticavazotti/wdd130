@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@300&display=swap');
+
+/* Homepage (Page 01 Styling sheet starts here) */
+
 body {
     background-color: whitesmoke;
     font-family: Roboto, 'Times New Roman', serif;
@@ -190,6 +193,85 @@ nav {
 
 }
 
+/* FAQ (Page 02 Styling sheet starts here) */
+.hero-msg-faq {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin-left: 80px;
+    margin-bottom: 30px;
+}
+#faq-flex {
+    display: flex;
+    flex-direction: column;
+}
+.faq_box{
+    border: 2px solid rgb(146, 146, 146);
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 10px 10px 5px rgb(175, 188, 192);
+    text-align: left;
+    padding: 30px;
+    margin: 80px 40px;
+    line-height: 1.5;
+}
+#faq-flexbox h4 {
+    color: #0077b6;
+    font-size: 2em;
+    text-shadow: 2px 2px rgb(7, 2, 82);
+    margin: 40px 80px 40px 80px;
+}
+.box-margin {
+    margin-top: 0;
+}
+#bottom-grid-faq {
+    display: grid;
+    grid-template-columns: 0.5fr repeat(5, 0.5fr) 0.5fr;
+    grid-template-rows: repeat(10, 52.5px);
+}
+#background-faq {
+    height: 525px;
+    grid-column: 1/9;
+    background-color:#78bee4;
+    margin-top: 70px;
+    margin-bottom: 0;
+}
+.friends {
+    grid-column: 2/5;
+    grid-row: 4/10;
+    align-self: stretch;
+}
+.msg-faq {
+    background-color:#03045E;
+    grid-column: 4/7;
+    grid-row: 5/9;
+    align-self: stretch;
+    padding: 20px;
+}
+.join-faq {
+    grid-column: 5/6;
+    grid-row: 8/9;
+    background-color: #0077B6;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 80px;
+    border-radius: 5px;
+}
+.join-faq:hover {
+    background-color: #90E0EF;
+    color: black;
+}
+.msg-faq p {
+    color: white;
+    padding-bottom: 20px;
+}
+.msg-faq h2 {
+    color: white;
+}
+
+
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
@@ -219,13 +301,25 @@ nav {
         margin: 50px auto;
         width: 60%;
     }
-    #background {
+    #background, #background-faq{
         display: none;
     }
     .mountains, .msg {
         width: 80%;
         display: block;
         margin: 0 auto;
+    }
+    .friends {
+        margin: auto;
+        padding: 0;
+        justify-items: center;
+        width: auto;
+    }
+    .msg-faq p {
+        font-size: 10px;
+    }
+    .msg-faq h2 {
+        font-size: 1em;
     }
     footer {
         margin-top: 25px;
