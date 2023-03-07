@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Playfair+Display&family=Satisfy&display=swap');
+
+/* Homepage (Page 01 Styling sheet starts here) */
+body {
+    background-color: rgb(243, 240, 235);
+    font-family: 'Playfair Display', serif;
+    color: black;
+}
+h1 {
+   font-family: 'Satisfy', cursive; 
+}
+h2, h3 {
+    font-family: 'Aboreto', cursive;
+}
