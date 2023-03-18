@@ -3,12 +3,218 @@
 /* Homepage (Page 01 Styling sheet starts here) */
 body {
     background-color: rgb(243, 240, 235);
-    font-family: 'Playfair Display', serif;
     color: black;
+    margin: 0;
 }
 h1 {
-   font-family: 'Satisfy', cursive; 
+    font-family: 'Satisfy', cursive;
+    color: white;
 }
-h2, h3 {
+h2, h3, a {
     font-family: 'Aboreto', cursive;
+    font-size: 22pt;
+}
+h2 {
+    color: #1E2D3F;
+    font-weight: bold;
+}
+p, ol, ul {
+    font-family: 'Playfair Display', serif;
+    font-size: 18pt;
+}
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+main {
+    margin: 0 45px;
+}
+header {
+    background-color: #4f3d4b94;
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+header img {
+    width: 90px;
+    padding: 10px;
+}
+header img:hover {
+    transform: scale(1.3);
+    transition:  0.5s;
+}
+#hero-img {
+    width: 100%;
+}
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -120px;
+}
+#hero-box {
+   grid-column: 1/4;
+   grid-row: 1/3;
+   z-index: -1; 
+}
+#hero-msg {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+.hero-title {
+    text-align: center;
+    text-shadow: 4px 4px #16212e;
+    font-size: 5em;
+    margin: 30px 50px 0 0;
+}
+#intro-grid {
+    display: grid;
+    grid-template-rows: 150px 2fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+#choose_topic-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.3fr 1fr;
+    grid-template-rows: 0.3fr 0.3fr 1fr 0.3fr;
+    justify-items: center;
+    text-align: center;
+}
+footer {
+    background-color: #4F3D4B;
+    color: #ffffff;
+    font-size: 1.2em;
+    padding: 25px 10px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+header nav a {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 35px;
+}
+header nav a:hover {
+    background-color: #4F3D4B;
+    color: white;
+    text-shadow: none;
+    font-weight: lighter;
+    transition-duration: 0.4s;
+}
+#about_me-box {
+    display: flex;
+    flex-direction: column;
+}
+.about_me-img {
+    width: 250px;
+    float: left;
+}
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer-icons {
+    margin: 10px;
+    padding: 0;
+}
+.topic_title-link:link {
+    text-decoration: none;
+}
+.topic_title-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #1E2D3F;
+}
+.site-plan:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+}
+#intro-list {
+    text-align: justify;
+    margin: auto;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.intro-paragrafo {
+    text-align: justify;
+    margin: 20px;
+    grid-row: 1/2;
+    grid-column: 1/4;
+}
+#homepage_colored_note {
+    grid-row: 3/4;
+    grid-column: 1/4;
+    border-radius: 30px;
+    color: white;
+    background-color: #1E2D3F;
+    padding: 20px 50px;
+    margin: 0 30px 30px 30px;
+    text-align: justify;
+    align-self: center;
+}
+li {
+    margin-bottom: 20px;
+}
+section div{
+    margin-top: 35px;
+}
+.passport {
+    border-radius: 50%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.family-tree {
+    border-radius: 50%;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.topic-title1 {
+    padding-left: 15px;
+    padding-right: 15px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.keep-reading1 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    font-size: 14pt;
+    font-weight: bold;
+}
+.topic-title2 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.keep-reading2 {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    font-size: 14pt;
+    font-weight: bold;
+}
+.topic-msg1 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.topic-msg2 {
+    grid-column: 3/42;
+    grid-row: 3/4;
+}
+.about_me-title {
+    color: #1E2D3F;
+    text-align: center;
+    font-weight: bolder;
+}
+.about_me-msg {
+    text-align: right;
+    margin: 0;
+    font-weight: bold;
+}
+.about_me-img {
+    width: auto;
+    margin-top: 60px;
 }
