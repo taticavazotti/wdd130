@@ -458,6 +458,39 @@ transform: translateY(4px);
     text-decoration: underline;
 }
 
+/* Page 04 Styling starts here ("Consulados Italianos" page) */
+#consulados-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.consulado-box {
+    width: 300px;
+    height: fit-content;
+    border: solid black;
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 20px;
+}
+.consulado-box p{
+    margin: 0;
+}
+.link {
+    font-size: 1em;
+    color:#4F3D4B;
+    text-decoration: none;
+}
+.link h2 {
+    font-family: 'Playfair Display', serif;
+}
+.link:hover {
+    color: #1E2D3F;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 /* Page 05 Styling starts here ("Contact" page) */
 #contact-form {
     width: 640px;
