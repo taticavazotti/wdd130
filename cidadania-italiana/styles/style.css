@@ -448,6 +448,17 @@ background-color: #8C94A0;
 box-shadow: 0 5px #4F3D4B;
 transform: translateY(4px);
 }
+.links {
+    font-family: 'Playfair Display', serif;
+    font-size: 18pt;
+    color: black;
+    text-decoration: underline;
+}
+.links:hover {
+    color: #1E2D3F;
+    font-weight: bold;
+    text-decoration: underline;
+}
 
 /* Page 05 Styling starts here ("Contact" page) */
 #contact-form {
