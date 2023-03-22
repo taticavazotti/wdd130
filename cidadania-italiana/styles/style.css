@@ -30,17 +30,27 @@ main {
     margin: 0 45px;
 }
 header {
-    background-color: #4f3d4b94;
+    overflow: hidden;
+    background-color: #624E4A;
     display: grid;
-    grid-template-columns: 100px auto;
+    grid-template-columns: 80px auto;
+    position: fixed;
+    width: 100%;
 }
-header img {
-    width: 90px;
-    padding: 10px;
+header img{
+    width: 60%;
+    filter: opacity(40%);
+    padding: 7% 0 0 30%;
 }
 header img:hover {
-    transform: scale(1.3);
-    transition:  0.5s;
+    filter: opacity(100%);
+}
+#logo {
+    grid-column: 1/2;
+    justify-self: center;
+}
+#navbar {
+    grid-column: 2/3;
 }
 #hero-img {
     width: 100%;
@@ -48,7 +58,6 @@ header img:hover {
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -120px;
 }
 #hero-box {
    grid-column: 1/4;
@@ -79,11 +88,10 @@ header img:hover {
     text-align: center;
 }
 footer {
-    background-color: #4F3D4B;
+    background-color: #624E4A;
     color: #ffffff;
     font-size: 1.2em;
     padding: 25px 10px;
-    margin-top: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -94,18 +102,16 @@ header nav {
 }
 header nav a {
     text-align: center;
-    color: black;
-    font-weight: bold;
-    font-size: 1.5em;
+    color: white;
+    font-size: 1em;
     text-decoration: none;
-    padding: 35px;
+    padding: 1.5% 1% 0 1%;
 }
 header nav a:hover {
-    background-color: #4F3D4B;
+    background-color: #8C94A0;
     color: white;
     text-shadow: none;
-    font-weight: lighter;
-    transition-duration: 0.4s;
+    transition-duration: 0.5s;
 }
 #about_me-box {
     display: flex;
@@ -199,10 +205,12 @@ section div{
 .topic-msg1 {
     grid-column: 1/2;
     grid-row: 3/4;
+    text-align: center;
 }
 .topic-msg2 {
-    grid-column: 3/42;
+    grid-column: 3/4;
     grid-row: 3/4;
+    text-align: center;
 }
 .about_me-title {
     color: #1E2D3F;
@@ -217,4 +225,236 @@ section div{
 .about_me-img {
     width: auto;
     margin-top: 60px;
+}
+
+/* Page 2 styling starts here ("Genealogia" Page) */
+#childpage-hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 80px auto;
+}
+#childpage-hero-msg {
+    grid-column: 1/6;
+    grid-row: 2/3;
+    text-align: center;
+}
+#childpage-hero-img {
+    width: 100%;
+}
+.spacing {
+    margin-top: 5%;
+    margin-bottom: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+}
+.spacing2 {
+    margin-bottom: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+}
+#contact-img {
+    width: 100%;
+}
+.childpage_colored_note {
+    border-radius: 120px;
+    color: white;
+    background-color: #1E2D3F;
+    padding: 5% 2%;
+    margin: 5% 5% 2% 5%;
+    text-align: center;
+    align-self: center;
+}
+#page2-grid {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(6, auto);
+    column-gap: 1%;
+}
+.number {
+    width: 50px;
+    height: auto;
+    border-radius: 15px;
+    color: white;
+    background-color: #1E2D3F;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+.number-box {
+    width: auto;
+    background-color: white;
+    border: solid 5px #1E2D3F;
+    border-radius: 15px;
+    padding: 40px 40px;
+}
+.genealogia-h3 {
+    color:#1E2D3F;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bolder;
+}
+.genealogia-p {
+    margin-top: 3%;
+    margin-bottom: 0;
+}
+.n1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.msg1 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+.n2 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.msg2 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.n3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.msg3 {
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+.n4 {
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+.msg4 {
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+.n5 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+.msg5 {
+    grid-column: 2/4;
+    grid-row: 5/6;
+}
+.n6 {
+    grid-column: 3/4;
+    grid-row: 6/7;
+}
+.msg6 {
+    grid-column: 1/3;
+    grid-row: 6/7;
+}
+#leque-img {
+    display: flexbox;
+    word-wrap: normal;
+}
+#FSinfo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    margin-top: 5%;
+}
+#FSinfo-grid h2 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 0 8% 0 0;
+    align-self: center;
+}
+.p1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: justify;
+    padding: 0 8% 0 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.p2 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    text-align: justify;
+    margin-top: 0;
+    padding: 0 8% 0 0;
+}
+#FSinfo-grid img {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    border-radius: 2%;
+    box-shadow: 10px 10px 10px  #4F3D4B;
+}
+.yt-box {
+    display: flex;
+    justify-content: center;
+}
+.yt-video {
+    width: 854px;
+    height: 480px;
+    border: solid 0.5em #16212e;
+}
+#contact-grid {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr) 2fr;
+    grid-template-rows: repeat(4, auto) 1fr;
+    margin-top: 5%;
+    margin-bottom: -45px;
+}
+#contact-img {
+    grid-column: 1/6;
+    grid-row: 1/5;
+    z-index: -1;
+}
+.contact-img {
+    width: 100%;
+    filter: opacity(50%);
+}
+#contact-msg {
+    grid-column: 1/6;
+    grid-row: 2/3;
+    text-align: center;
+}
+.contact-msg {
+    font-weight: bolder;
+    color: #1E2D3F;
+    text-shadow: #16212e;
+}
+#contact-button {
+    grid-column: 1/6;
+    grid-row: 3/4;
+    justify-self: center;
+    align-items: start;
+}
+.button {
+    padding: 5% 10%;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #1E2D3F;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #8C94A0;
+    font-family: 'Playfair Display', serif;
+}
+.button:hover {
+    background-color:#4F3D4B;
+}
+.button:active {
+background-color: #8C94A0;
+box-shadow: 0 5px #4F3D4B;
+transform: translateY(4px);
+}
+
+/* Page 05 Styling starts here ("Contact" page) */
+#contact-form {
+    width: 640px;
+    height: 980px;
+    border: 0;
+    margin: 5% auto 5% auto;
+    display: flex;
+    justify-content: center;
 }
