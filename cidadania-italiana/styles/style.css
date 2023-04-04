@@ -559,13 +559,13 @@ transform: translateY(4px);
     margin-top: 10%;
     display: grid;
     grid-template-columns: 125px auto;
-    grid-template-rows: 62.5 62.5;
+    grid-template-rows: 62.5px 62.5px;
 }
 .steps-title-grid1 {
     margin-top: 0%;
     display: grid;
     grid-template-columns: 125px auto;
-    grid-template-rows: 62.5 62.5;
+    grid-template-rows: 62.5px 62.5px;
 }
 .steps-icon {
     grid-column: 1/2;
